@@ -1,0 +1,24 @@
+HOW TO CREATE AN INSTANCE
+2. Search for Ec2
+3. Go down to resource then click on 'launch Instance'
+4. Name your server
+5. If for Amazon linux click on it, but if is on ubuntu OS and click on it
+6. Then on the Amazon machine image (AMI), use free tier eligible as well as on the instance type. (use t2 micro")
+7. Go to key pair, click on proceed without a key pair
+8. On the firewall (security groups), you click on create security group and allow SSH traffic, http and https traffic form
+9. Then on the configure storage, leave it at the default Gib (gp3)
+10. Click on launch Instance
+11. connect to Instance by clicking on connect in the next page
+
+
+HOW TO INSTALL NGINX ON THE EC2 INSTANCE
+12. sudo yum install nginx, then enter
+13. you check the status if its runing by using, sudo systemctl status nginx and enter
+14. if is not showing runing, you type, sudo systemctl start nginx and enter
+15. then enable the service with sudo systemctl enable nginx and enter
+you go back to your aws management console and go back to your instance and copy the instance Ip pulic address and place it on your browser
+it will show you the nginx page, then you are done. 
+
+
+
+   
